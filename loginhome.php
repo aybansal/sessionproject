@@ -1,5 +1,10 @@
 <?php
-	if($_POST){
-	$uname1=($_POST['uname']);
-	$pwd1=($_POST["pwd"]);
-	}
+	include('session.php');
+?>
+<html>
+	<<body>
+      <h1>Welcome <?php echo $login_session; ?></h1> 
+      <h2><a href = "logout.php">Sign Out</a></h2>
+   </body>
+</html>
+	
