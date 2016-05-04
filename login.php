@@ -10,7 +10,7 @@
 			$result=mysqli_query($con,$sql);
 			//$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 			//$active=$row['active'];
-			
+			print_r(mysqli_num_rows($result)) or die;
 				if(mysqli_num_rows($result) > 1){
 					echo "invalid username and pasword";
 				}
@@ -45,7 +45,7 @@
 				
 				<tr>
 					<td> </td>
-						<td><input type="submit" value="submit"></td>
+						<td><input type="submit" name="submit" value="submit"></td>
 				</tr>
 			</table>
 		</form>
